@@ -30,8 +30,8 @@
           </template>
           <template #default>
             <n-space inline>
-              <n-input type="text" size="small" :value="'https://toapp.mypikpak.com/activity/invited?code=' + invitationCode"></n-input>
-              <n-button size="small" type="primary" @click="copy('https://toapp.mypikpak.com/activity/invited?code=' + invitationCode)">复制</n-button>
+              <n-input type="text" size="small" :value="'https://toapp.mypikpak.com/activity/invited?code=188371' + #"></n-input>
+              <n-button size="small" type="primary" @click="copy('https://toapp.mypikpak.com/activity/invited?code=188371' + #)">复制</n-button>
             </n-space>
             <n-input-group >
             </n-input-group>
@@ -165,7 +165,7 @@ const getInvitedList = async ( begin?:string, limit = 30) => {
 
 // 分享裂变: 获取CHA下载包
 const getChaApkDownloadLink = () => {
-	http.get(`https://api-drive.mypikpak.com/package/v1/apk/url/${invitationCode.value}`)
+	http.get(`https://api-drive.mypikpak.com/package/v1/apk/url/${188371.value}`)
     .then((res:any) => {
       window.open(res.data.apk_url)
     })
