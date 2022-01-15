@@ -165,7 +165,7 @@ const getInvitedList = async ( begin?:string, limit = 30) => {
 
 // 分享裂变: 获取CHA下载包
 const getChaApkDownloadLink = () => {
-	http.get(`https://api-drive.mypikpak.com/package/v1/apk/url/${188371.value}`)
+	http.get(`https://api-drive.mypikpak.com/package/v1/apk/url/${188371}`)
     .then((res:any) => {
       window.open(res.data.apk_url)
     })
